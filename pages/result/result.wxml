@@ -1,0 +1,43 @@
+<!--result.wxml-->
+<navigation-bar title="游戏结果" back="{{false}}" color="white" background="#1E88E5"></navigation-bar>
+<view class="container">
+  <view class="result-header">
+    <view class="game-info">{{dictionary}} · {{timeInSeconds}}秒</view>
+    <view class="score-container">
+      <view class="score-label">本轮得分</view>
+      <view class="score-value">{{score}}</view>
+    </view>
+  </view>
+  
+  <view class="words-container">
+    <view class="words-section">
+      <view class="section-title correct-title">猜对词语 ({{correctWords.length}})</view>
+      <view class="words-list">
+        <view class="word-item correct" wx:for="{{correctWords}}" wx:key="index">
+          {{item}}
+        </view>
+        <view class="empty-message" wx:if="{{correctWords.length === 0}}">
+          本轮没有猜对任何词语
+        </view>
+      </view>
+    </view>
+    
+    <view class="words-section">
+      <view class="section-title skip-title">跳过词语 ({{skippedWords.length}})</view>
+      <view class="words-list">
+        <view class="word-item skipped" wx:for="{{skippedWords}}" wx:key="index">
+          {{item}}
+        </view>
+        <view class="empty-message" wx:if="{{skippedWords.length === 0}}">
+          本轮没有跳过任何词语
+        </view>
+      </view>
+    </view>
+  </view>
+  
+  <view class="actions">
+    <view class="btn btn-primary" bindtap="playAgain">再玩一次</view>
+    <view class="btn btn-secondary" bindtap="goHome">返回首页</view>
+    <view class="btn btn-success" bindtap="shareResults">分享成绩</view>
+  </view>
+</view> 

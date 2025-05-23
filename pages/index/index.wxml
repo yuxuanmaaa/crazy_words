@@ -1,7 +1,31 @@
 <!--index.wxml-->
-<navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    Weixin
+<navigation-bar title="疯狂猜词" back="{{false}}" color="white" background="#1E88E5"></navigation-bar>
+<view class="container">
+  <view class="title">疯狂猜词</view>
+  
+  <view class="dict-selector">
+    <view class="dict-title">选择词库</view>
+    <view class="dict-buttons">
+      <view class="dict-btn {{dictIndex === index ? 'active' : ''}}" 
+            wx:for="{{dictionaries}}" 
+            wx:key="index"
+            bindtap="onDictSelect"
+            data-index="{{index}}">
+        {{item}}
+      </view>
+    </view>
   </view>
-</scroll-view>
+  
+  <view class="btn btn-primary" bindtap="onStartGame">开始游戏</view>
+  <view class="btn btn-secondary" bindtap="showRules">游戏规则</view>
+  
+  <view class="rules-modal" wx:if="{{showRulesModal}}">
+    <view class="rules-content">
+      <view class="rules-title">游戏规则</view>
+      <view class="rules-text">
+        一名玩家手持设备，屏幕上显示需要猜的词语，但持有者看不到。其他玩家通过语言或肢体动作描述该词语，持有者根据描述进行猜测。猜对后，持有者手机横屏往下翻转表示正确；若放弃，则手机横屏往上翻转表示跳过。每轮有时间限制，规定时间内猜对的词语数量越多，得分越高。
+      </view>
+      <view class="btn-close" bindtap="hideRules">关闭</view>
+    </view>
+  </view>
+</view>

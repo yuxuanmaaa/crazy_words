@@ -1,0 +1,28 @@
+<!--game.wxml-->
+<view class="container">
+  <view class="game-header">
+    <view class="timer">
+      <view class="timer-text">{{timeLeft}}</view>
+      <view class="timer-label">秒</view>
+    </view>
+    <view class="score">
+      <view class="score-text">{{score}}</view>
+      <view class="score-label">分</view>
+    </view>
+  </view>
+  
+  <view class="word-container">
+    <view class="word">{{currentWord}}</view>
+  </view>
+  
+  <view class="action-areas">
+    <view class="action-area correct" bindtap="onCorrectTap">
+      <text class="action-text">猜对</text>
+    </view>
+    <view class="action-area skip" bindtap="onSkipTap">
+      <text class="action-text">跳过</text>
+    </view>
+  </view>
+  
+  <view class="tip-text">请让他人描述词语，自己猜测并点击相应按钮</view>
+</view> 

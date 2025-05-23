@@ -1,0 +1,32 @@
+<!--settings.wxml-->
+<navigation-bar title="游戏设置" back="{{true}}" color="white" background="#1E88E5" bindback="goBack"></navigation-bar>
+<view class="container">
+  <view class="section">
+    <view class="section-title">已选词库</view>
+    <view class="section-content">{{dictionaries[selectedDict]}}</view>
+  </view>
+  
+  <view class="section">
+    <view class="section-title">游戏时间</view>
+    <view class="section-content time-selector">
+      <picker bindchange="onTimeChange" value="{{timeIndex}}" range="{{timeOptions}}">
+        <view class="picker-box">
+          {{timeOptions[timeIndex]}}
+          <text class="iconfont icon-down"></text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  
+  <view class="section">
+    <view class="section-title">玩家数量</view>
+    <view class="section-content player-selector">
+      <view class="player-control" bindtap="decreasePlayer">-</view>
+      <view class="player-count">{{playerCount}}人</view>
+      <view class="player-control" bindtap="increasePlayer">+</view>
+    </view>
+  </view>
+  
+  <view class="btn btn-primary" bindtap="startGame">开始游戏</view>
+  <view class="btn btn-secondary" bindtap="goBack">返回</view>
+</view> 

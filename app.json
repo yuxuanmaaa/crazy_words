@@ -1,10 +1,16 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/settings/settings",
+    "pages/prepare/prepare",
+    "pages/game/game",
+    "pages/result/result"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom",
+    "backgroundColor": "#F5F5F5",
+    "backgroundTextStyle": "light"
   },
   "style": "v2",
   "renderer": "skyline",

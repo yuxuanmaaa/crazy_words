@@ -4,6 +4,144 @@ page {
   display: flex;
   flex-direction: column;
 }
+
+.title {
+  font-size: 60rpx;
+  font-weight: bold;
+  margin-bottom: 60rpx;
+  color: #1E88E5;
+}
+
+.dict-selector {
+  width: 80%;
+  background-color: #FFFFFF;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  margin-bottom: 60rpx;
+  box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.dict-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.dict-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20rpx;
+}
+
+.dict-btn {
+  padding: 15rpx 30rpx;
+  background-color: #F5F5F5;
+  border-radius: 30rpx;
+  font-size: 28rpx;
+  color: #666666;
+  transition: all 0.3s ease;
+}
+
+/* 为每个词库按钮设置不同的颜色 */
+.dict-btn:nth-child(1) {
+  background-color: #23f0c7;
+  color: #FFFFFF;
+}
+
+.dict-btn:nth-child(2) {
+  background-color: #ef767a;
+  color: #FFFFFF;
+}
+
+.dict-btn:nth-child(3) {
+  background-color: #7d7abc;
+  color: #FFFFFF;
+}
+
+.dict-btn:nth-child(4) {
+  background-color: #6457a6;
+  color: #FFFFFF;
+}
+
+.dict-btn:nth-child(5) {
+  background-color: #ffe347;
+  color: #333333;
+}
+
+.dict-btn:nth-child(6) {
+  background-color: #23f0c7;
+  color: #FFFFFF;
+}
+
+.dict-btn.active {
+  transform: scale(1.05);
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.2);
+}
+
+.picker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333333;
+  font-size: 32rpx;
+}
+
+.icon-down {
+  margin-left: 10rpx;
+  color: #1E88E5;
+}
+
+.rules-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.rules-content {
+  width: 80%;
+  background-color: #FFFFFF;
+  border-radius: 20rpx;
+  padding: 40rpx;
+  box-shadow: 0 8rpx 20rpx rgba(0, 0, 0, 0.2);
+}
+
+.rules-title {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #1E88E5;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.rules-text {
+  font-size: 28rpx;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 30rpx;
+}
+
+.btn-close {
+  width: 200rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  background-color: #1E88E5;
+  color: #FFFFFF;
+  font-size: 30rpx;
+  border-radius: 35rpx;
+  margin: 0 auto;
+}
+
 .scrollarea {
   flex: 1;
   overflow-y: hidden;

@@ -1,0 +1,28 @@
+<!--prepare.wxml-->
+<view class="container">
+  <view class="prepare-title">准备开始</view>
+  <view class="countdown">{{countdown}}</view>
+  <view class="game-info">
+    <view class="info-row">
+      <text class="info-label">词库:</text>
+      <text class="info-value">{{gameSettings.dictionaryName}}</text>
+    </view>
+    <view class="info-row">
+      <text class="info-label">时间:</text>
+      <text class="info-value">{{gameSettings.timeInSeconds}}秒</text>
+    </view>
+  </view>
+  <view class="tip">
+    提示：持有者无法看到词语，需要通过他人描述来猜测
+  </view>
+  <view class="controls-tip">
+    <view class="control-item">
+      <view class="control-btn correct">猜对</view>
+      <text>猜对时点击</text>
+    </view>
+    <view class="control-item">
+      <view class="control-btn skip">跳过</view>
+      <text>跳过时点击</text>
+    </view>
+  </view>
+</view> 

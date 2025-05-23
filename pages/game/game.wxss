@@ -1,0 +1,128 @@
+/**game.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #F5F5F5;
+  padding: 40rpx 0;
+  box-sizing: border-box;
+}
+
+.game-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60rpx;
+  margin-bottom: 40rpx;
+}
+
+.timer, .score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+  width: 150rpx;
+  border-radius: 20rpx;
+}
+
+.timer {
+  background-color: #F44336;
+  color: white;
+}
+
+.timer-text {
+  font-size: 48rpx;
+  font-weight: bold;
+}
+
+.timer-label {
+  font-size: 24rpx;
+}
+
+.score {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.score-text {
+  font-size: 48rpx;
+  font-weight: bold;
+}
+
+.score-label {
+  font-size: 24rpx;
+}
+
+.word-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.word {
+  font-size: 80rpx;
+  font-weight: bold;
+  color: #1E88E5;
+  text-align: center;
+  margin: 0 40rpx;
+}
+
+/* 按钮操作区域样式 */
+.action-areas {
+  width: 100%;
+  display: flex;
+  height: 200rpx;
+  margin-bottom: 30rpx;
+}
+
+.action-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 38rpx;
+  font-weight: bold;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+
+.action-area:active {
+  transform: scale(0.98);
+  box-shadow: 0 2rpx 6rpx rgba(0, 0, 0, 0.1);
+}
+
+.action-area.correct {
+  background-color: #4CAF50;
+  margin-right: 6rpx;
+  border-top-right-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+
+.action-area.skip {
+  background-color: #F44336;
+  margin-left: 6rpx;
+  border-top-left-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+}
+
+.action-text {
+  text-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.2);
+}
+
+.tip-text {
+  font-size: 28rpx;
+  color: #666;
+  text-align: center;
+  padding: 20rpx 40rpx;
+  margin-bottom: 20rpx;
+  background-color: #FFC107;
+  border-radius: 10rpx;
+  width: 80%;
+}
+
+ 

@@ -1,0 +1,100 @@
+/**result.wxss**/
+.container {
+  padding: 30rpx 0;
+}
+
+.result-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50rpx;
+}
+
+.game-info {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 20rpx;
+}
+
+.score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-label {
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.score-value {
+  font-size: 80rpx;
+  font-weight: bold;
+  color: #1E88E5;
+}
+
+.words-container {
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  margin-bottom: 50rpx;
+}
+
+.words-section {
+  margin-bottom: 40rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 2rpx solid #F5F5F5;
+}
+
+.correct-title {
+  color: #4CAF50;
+}
+
+.skip-title {
+  color: #F44336;
+}
+
+.words-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.word-item {
+  margin: 10rpx;
+  padding: 15rpx 25rpx;
+  border-radius: 30rpx;
+  font-size: 28rpx;
+}
+
+.correct {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+}
+
+.skipped {
+  background-color: rgba(244, 67, 54, 0.2);
+  color: #F44336;
+}
+
+.empty-message {
+  width: 100%;
+  text-align: center;
+  color: #999;
+  font-size: 28rpx;
+  padding: 30rpx 0;
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
